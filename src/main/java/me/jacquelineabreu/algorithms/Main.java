@@ -13,7 +13,7 @@ public class Main {
         int goal = 6;
         ArrayList<Integer> source = new ArrayList<Integer>();
         source.addAll(Arrays.asList(1, 2, 3, 4, 6));
-        PrintSubset printer = new PrintSubsetSum();
+        PrintSet printer = new PrintSubset();
         new SubsetSum(printer).subsetSum(goal, source);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
