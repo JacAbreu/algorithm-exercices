@@ -8,9 +8,9 @@ import java.util.List;
 
 public class SubsetSum {
     private final Deque<Integer> subset = new ArrayDeque<>();
-    private final PrintSet printer;
+    private final SetPrinter printer;
 
-    public SubsetSum(PrintSet printer) {
+    public SubsetSum(SetPrinter printer) {
         this.printer = printer;
     }
 

@@ -11,7 +11,7 @@ public class SubsetSumTest {
 
     @Test
     public void testEmptySubset() throws Exception {
-        PrintSet print = mock(PrintSet.class);
+        SetPrinter print = mock(SetPrinter.class);
         SubsetSum sum = new SubsetSum(print);
         sum.subsetSum(0, new ArrayList<Integer>());
         verifyNoMoreInteractions(print);
@@ -19,7 +19,7 @@ public class SubsetSumTest {
 
     @Test
     public void testEmptySubsetSumDifferent0() throws Exception {
-        PrintSet print = mock(PrintSet.class);
+        SetPrinter print = mock(SetPrinter.class);
         SubsetSum sum = new SubsetSum(print);
         sum.subsetSum(10, new ArrayList<Integer>());
         verifyNoMoreInteractions(print);
@@ -27,7 +27,7 @@ public class SubsetSumTest {
 
     @Test
     public void test12346Subset6() throws Exception {
-        PrintSet print = mock(PrintSet.class);
+        SetPrinter print = mock(SetPrinter.class);
         SubsetSum sum = new SubsetSum(print);
         sum.subsetSum(6, Arrays.asList(1, 2, 3, 4, 6));
         verify(print).printSubset(Arrays.asList(1, 2, 3));
@@ -38,7 +38,7 @@ public class SubsetSumTest {
 
     @Test
     public void testSubset55() throws Exception {
-        PrintSet print = mock(PrintSet.class);
+        SetPrinter print = mock(SetPrinter.class);
         SubsetSum sum = new SubsetSum(print);
         sum.subsetSum(55, Arrays.asList(15, 20, 30, 40, 55));
         verify(print).printSubset(Arrays.asList(15, 40));
@@ -48,7 +48,7 @@ public class SubsetSumTest {
 
     @Test
     public void testSum55SubsetEmpty() throws Exception {
-        PrintSet print = mock(PrintSet.class);
+        SetPrinter print = mock(SetPrinter.class);
         SubsetSum sum = new SubsetSum(print);
         sum.subsetSum(55, Arrays.asList(15, 30, 60, 80, 90));
         verifyNoMoreInteractions(print);

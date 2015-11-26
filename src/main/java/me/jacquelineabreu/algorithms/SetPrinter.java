@@ -1,6 +1,6 @@
 package me.jacquelineabreu.algorithms;
 
-public interface PrintSet {
+public interface SetPrinter {
 
     void printSubset(Iterable<Integer> subset);
 }

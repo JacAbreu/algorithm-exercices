@@ -1,6 +1,6 @@
 package me.jacquelineabreu.algorithms;
 
-public class PrintSubset implements PrintSet {
+public class ConsoleSetPrinter implements SetPrinter {
 
     public void printSubset(Iterable<Integer> subset){
         System.out.print("( ");
